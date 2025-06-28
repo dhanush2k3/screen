@@ -18,7 +18,14 @@ const StackScreen2: React.FC = () => {
     <View>
       <Text>StackScreen2</Text>
       <Text>Item:ID : {route.params.itemId}</Text>
-      <Button title="Go Back Screen1" onPress={() => navigation.goBack()} />
+      <Button
+        title="Go to OverView"
+        onPress={() => navigation.navigate('OverViewScreen')}
+      />
+      <Button
+        title="Go to TaskDetail"
+        onPress={() => navigation.navigate('TaskDetailScreen')}
+      />
     </View>
   );
 };
